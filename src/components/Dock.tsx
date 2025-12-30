@@ -12,8 +12,7 @@ const dockIcons: DockIcon[] = [
   { id: 'finder', name: 'Finder', icon: 'finder.png' },
   { id: 'terminal', name: 'Terminal', icon: 'terminal.png' },
   { id: 'safari', name: 'Safari', icon: 'safari.png' },
-  { id: 'github', name: 'GitHub', icon: 'github.svg' },
-  { id: 'mail', name: 'Mail', icon: 'mail.png' },
+  { id: 'github', name: 'GitHub', icon: '../icons/github.svg' },
   { id: 'trash', name: 'Trash', icon: 'trash.png' },
 ]
 
@@ -32,7 +31,7 @@ function Dock() {
             title={icon.name}
           >
             <img
-              src={`${BASE_URL}/images/${icon.icon}`}
+              src={`${BASE_URL}/${icon.icon}`}
               alt={icon.name}
               draggable={false}
             />
